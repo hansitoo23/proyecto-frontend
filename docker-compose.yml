@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+
+  frontend:
+    image: front-despacho:latest
+    ports:
+      - "5173:5173"
+
+  backend-ventas:
+    image: backend-ventas:latest
+    ports:
+      - "8080:8080"
+
+  backend-despachos:
+    image: backend-despachos:latest
+    ports:
+      - "8081:8081"
